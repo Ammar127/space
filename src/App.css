@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('assets/font/BrandonGrotesque-Bold.woff2') format('woff2'),
+      url('assets/font/BrandonGrotesque-Bold.woff') format('woff'),
+      url('assets/font/BrandonGrotesque-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('assets/font/BrandonGrotesque-Regular.woff2') format('woff2'),
+      url('assets/font/BrandonGrotesque-Regular.woff') format('woff'),
+      url('assets/font/BrandonGrotesque-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('assets/font/BrandonGrotesque-RegularItalic.woff2') format('woff2'),
+      url('assets/font/BrandonGrotesque-RegularItalic.woff') format('woff'),
+      url('assets/font/BrandonGrotesque-RegularItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('assets/font/BrandonGrotesque-Black.woff2') format('woff2'),
+      url('assets/font/BrandonGrotesque-Black.woff') format('woff'),
+      url('assets/font/BrandonGrotesque-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('assets/font/BrandonGrotesque-Medium.woff2') format('woff2'),
+      url('assets/font/BrandonGrotesque-Medium.woff') format('woff'),
+      url('assets/font/BrandonGrotesque-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
 }
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
+}
+.navbar-brand{
+    font-size: 1.1rem;
+}
+a{
+    text-decoration: none;
+    color: #545454;
+}
+a:hover{
+    text-decoration: none;
+    color: #545454;
+}
+.btn:focus, select{
+    outline: none;
+    box-shadow: none;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #545454;
+    margin-bottom: 0;
+}
+.date{
+    font-size: 11px;
+    margin-bottom: 5px;
+    color: #545454;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.card{
+    border-radius: 10px;
+    border: 0;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.2);
+    padding: 10px;
+}
+.btn-solid{
+    color: #fff;
+    background-color: #215184;
+    border-color: #215184;
+    border-radius: 0;
+}
+.btn-solid:hover{
+    color: #fff;
+    background-color: #215184;
+    border-color: #215184;
+}
+.btn-top{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+select{
+    color: #fff;
+    background-color: #215184;
+    border-color: #215184;
+    height: 38px;
+    margin-right: 10px;
+    padding: 0px 14px;
+}
+.space-img{
+    height: 600px;
+    width: 100%;
+}
+.space-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.font-weight-demibold{
+    font-weight: 600;
+}
+@media (max-width: 768px){
+    .space-img{
+        height: 300px;
+        width: 100%;
+       margin-bottom: 20px;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1.2rem;
+    }
+    .btn-top{
+    position: relative;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    }
+    .btn,select{
+        font-size: .8rem;
+    }
+    select{
+        height: 34px;
+    }
 }
