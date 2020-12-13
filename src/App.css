@@ -144,3 +144,7 @@ select{
         height: 34px;
     }
 }
+.loader {
+    text-align : center;
+    padding-top: 100px ;
+}
